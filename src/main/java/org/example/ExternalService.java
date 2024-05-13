@@ -15,7 +15,7 @@ public class ExternalService {
         WorkflowOptions workflowOptions = WorkflowOptions.newBuilder()
                 .setTaskQueue("remote-queue")
                 .build();
-        WorkflowStub workflowStub = workflowClient.newUntypedWorkflowStub("WorkflowToStart", workflowOptions);
+        WorkflowStub workflowStub = workflowClient.newUntypedWorkflowStub("ExternalTriggeredWorkflow", workflowOptions);
         workflowStub.start("input-for-started-workflow");
     }
 }
