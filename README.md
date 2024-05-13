@@ -7,6 +7,7 @@ temporal server start-dev
 ```
 
 2. Run the `ExternalServer.java`'s main code.
+3. Run worker's main code `ExternalTriggeredWorker.java`
 
-3. Check that workflow has started using temporal UI - `http://localhost:8233/`
+4. Check that workflow has started using temporal UI - `http://localhost:8233/`
 
